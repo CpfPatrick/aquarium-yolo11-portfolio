@@ -1,0 +1,45 @@
+{
+  "release_filename": "aquarium-yolo11n-imgsz960-best.pt",
+  "checkpoint_sha256": "ff7284669dd3d1b30b83f2d9eaacbdefdf8b50836f6f4e629bfd16f877a2f281",
+  "registered_imgsz": 960,
+  "architecture": "YOLO11n",
+  "ultralytics_version": "8.4.115",
+  "license": "AGPL-3.0",
+  "dataset": {
+    "name": "Aquarium Combined v6",
+    "source": "https://universe.roboflow.com/brad-dwyer/aquarium-combined/dataset/6",
+    "license": "CC BY 4.0"
+  },
+  "validation": {
+    "Class": "all",
+    "Images": 127,
+    "Instances": 909,
+    "Box-P": 0.797601,
+    "Box-R": 0.716221,
+    "Box-F1": 0.754724,
+    "mAP50": 0.776219,
+    "mAP50-95": 0.48949
+  },
+  "sealed_test": {
+    "Class": "all",
+    "Images": 63,
+    "Instances": 584,
+    "Box-P": 0.772852,
+    "Box-R": 0.722068,
+    "Box-F1": 0.746598,
+    "mAP50": 0.774026,
+    "mAP50-95": 0.493568
+  },
+  "sealed_test_fish": {
+    "Class": "fish",
+    "Images": 30,
+    "Instances": 249,
+    "Box-P": 0.767628,
+    "Box-R": 0.729681,
+    "Box-F1": 0.748174,
+    "mAP50": 0.78015,
+    "mAP50-95": 0.480074
+  },
+  "sealed_test_manifest_sha256": "26c785a3c9765eeb263ff9769c6d66434a4d268ba949343f937ad5c3053b0e17",
+  "post_test_tuning": false
+}

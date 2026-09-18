@@ -1,0 +1,123 @@
+{
+  "status": "sealed_complete",
+  "approval_text": "Patrick confirmed the five-case interpretation, the imgsz960 checkpoint, and the one-time frozen-test unlock in Codex on 2026-08-19.",
+  "unlock_timestamp_utc": "2026-08-19T09:11:21.286459+00:00",
+  "completed_at_utc": "2026-08-19T09:16:44.372216+00:00",
+  "recovery": {
+    "reason": "Post-inference JSON serialization rejected NumPy scalar types.",
+    "model_inference_repeated": false,
+    "thresholds_changed": false,
+    "test_runs_completed_once": true
+  },
+  "dataset": {
+    "name": "Aquarium Combined v6",
+    "data_yaml_sha256": "dcb44902aac3e46a31ba85b3fa8cc7e3e4a131f69ed035b7181ab045a3ee89a7",
+    "split": "test",
+    "images": 63,
+    "test_accessed": true
+  },
+  "selection_frozen_before_test": {
+    "candidate": "imgsz960",
+    "checkpoint_sha256": "ff7284669dd3d1b30b83f2d9eaacbdefdf8b50836f6f4e629bfd16f877a2f281",
+    "selection_record_sha256_before_test": "b819b97a8a2d2b4fc99e20f969a75c63fc428735400deaf3dd9b2dc62a22f0b9"
+  },
+  "protocol": {
+    "batch": 8,
+    "device": 0,
+    "conf": 0.001,
+    "iou": 0.7,
+    "rect": true,
+    "plots": true,
+    "workers": 2,
+    "baseline_imgsz": 640,
+    "selected_imgsz": 960
+  },
+  "models": [
+    {
+      "role": "baseline_reference",
+      "imgsz": 640,
+      "checkpoint_sha256": "837d249c93ee487b262190adcd6287cece0af8b51c25654c5c9e4f4a25cd33e3",
+      "metrics_csv": "results/final_test/baseline_test_metrics.csv",
+      "metrics_csv_sha256": "64ecc9546e813f2be30cf17db8a14d53531af1876b49b0bcaaf8e55f7981f8d3",
+      "run_directory": "results/final_test/baseline_imgsz640",
+      "overall": {
+        "Class": "all",
+        "Images": 63,
+        "Instances": 584,
+        "Box-P": 0.792995,
+        "Box-R": 0.661457,
+        "Box-F1": 0.721278,
+        "mAP50": 0.748317,
+        "mAP50-95": 0.464779
+      },
+      "fish": {
+        "Class": "fish",
+        "Images": 30,
+        "Instances": 249,
+        "Box-P": 0.74413,
+        "Box-R": 0.566265,
+        "Box-F1": 0.643127,
+        "mAP50": 0.686146,
+        "mAP50-95": 0.396521
+      },
+      "diagnostic_files": [
+        "BoxF1_curve.png",
+        "BoxPR_curve.png",
+        "BoxP_curve.png",
+        "BoxR_curve.png",
+        "confusion_matrix.png",
+        "confusion_matrix_normalized.png",
+        "val_batch0_labels.jpg",
+        "val_batch0_pred.jpg",
+        "val_batch1_labels.jpg",
+        "val_batch1_pred.jpg",
+        "val_batch2_labels.jpg",
+        "val_batch2_pred.jpg"
+      ]
+    },
+    {
+      "role": "selected_final",
+      "imgsz": 960,
+      "checkpoint_sha256": "ff7284669dd3d1b30b83f2d9eaacbdefdf8b50836f6f4e629bfd16f877a2f281",
+      "metrics_csv": "results/final_test/selected_test_metrics.csv",
+      "metrics_csv_sha256": "2e3e6afeb5d835cab94f9c5871222ec93e49f37ac458ea1d59e6e8e1f2462e79",
+      "run_directory": "results/final_test/selected_imgsz960",
+      "overall": {
+        "Class": "all",
+        "Images": 63,
+        "Instances": 584,
+        "Box-P": 0.772852,
+        "Box-R": 0.722068,
+        "Box-F1": 0.746598,
+        "mAP50": 0.774026,
+        "mAP50-95": 0.493568
+      },
+      "fish": {
+        "Class": "fish",
+        "Images": 30,
+        "Instances": 249,
+        "Box-P": 0.767628,
+        "Box-R": 0.729681,
+        "Box-F1": 0.748174,
+        "mAP50": 0.78015,
+        "mAP50-95": 0.480074
+      },
+      "diagnostic_files": [
+        "BoxF1_curve.png",
+        "BoxPR_curve.png",
+        "BoxP_curve.png",
+        "BoxR_curve.png",
+        "confusion_matrix.png",
+        "confusion_matrix_normalized.png",
+        "val_batch0_labels.jpg",
+        "val_batch0_pred.jpg",
+        "val_batch1_labels.jpg",
+        "val_batch1_pred.jpg",
+        "val_batch2_labels.jpg",
+        "val_batch2_pred.jpg"
+      ]
+    }
+  ],
+  "post_test_tuning": false,
+  "no_further_training_authorized": true
+}

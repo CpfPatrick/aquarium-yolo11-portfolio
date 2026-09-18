@@ -1,0 +1,50 @@
+# macOS and editors
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# Private application drafts are delivered separately, not published in the repository
+application/
+
+# Local data and training outputs
+data/
+datasets/
+runs/
+wandb/
+mlruns/
+
+# Model exports belong in a reviewed GitHub Release
+models/
+*.pt
+*.part
+*.pth
+*.ckpt
+*.onnx
+*.engine
+*.tflite
+
+# Temporary demo outputs
+outputs/
+tmp/
+*.log

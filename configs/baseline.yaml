@@ -1,0 +1,17 @@
+task: detect
+mode: train
+model: yolo11n.pt
+pretrained: true
+data: data/aquarium-combined-v6-yolov11/data.yaml
+epochs: 50
+imgsz: 640
+batch: 8
+seed: 42
+deterministic: true
+patience: 10
+workers: 2
+device: 0
+project: runs
+name: yolo11n_baseline_seed42
+exist_ok: false
+save: true

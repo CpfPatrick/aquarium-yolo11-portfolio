@@ -1,0 +1,6 @@
+{
+  "reason": "Post-inference JSON serialization rejected NumPy scalar types.",
+  "model_inference_repeated": false,
+  "thresholds_changed": false,
+  "test_runs_completed_once": true
+}

@@ -1,0 +1,7 @@
+{
+  "sealed_test_manifest_sha256": "26c785a3c9765eeb263ff9769c6d66434a4d268ba949343f937ad5c3053b0e17",
+  "selected_checkpoint_sha256": "ff7284669dd3d1b30b83f2d9eaacbdefdf8b50836f6f4e629bfd16f877a2f281",
+  "post_test_tuning": false,
+  "no_further_training_authorized": true,
+  "model_inference_repeated_during_recovery": false
+}

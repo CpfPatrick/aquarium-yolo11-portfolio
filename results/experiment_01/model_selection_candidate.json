@@ -1,0 +1,30 @@
+{
+  "status": "approved_and_test_sealed",
+  "created_at_utc": "2026-08-19T08:47:22.117717+00:00",
+  "rule": {
+    "min_map50_95_gain": 0.005,
+    "max_precision_drop": 0.02,
+    "max_recall_drop": 0.02,
+    "max_fish_recall_drop": 0.02
+  },
+  "observed": {
+    "map50_95_gain": 0.023617999999999972,
+    "precision_drop": 0.0021759999999999557,
+    "recall_drop": -0.03476800000000002,
+    "fish_recall_drop": -0.07110299999999992
+  },
+  "checks": {
+    "map_gain_at_least_0.005": true,
+    "precision_drop_no_more_than_0.02": true,
+    "recall_drop_no_more_than_0.02": true,
+    "fish_recall_drop_no_more_than_0.02": true
+  },
+  "candidate": "imgsz960",
+  "checkpoint": "release://v1.0/aquarium-yolo11n-imgsz960-best.pt",
+  "checkpoint_sha256": "ff7284669dd3d1b30b83f2d9eaacbdefdf8b50836f6f4e629bfd16f877a2f281",
+  "test_accessed": true,
+  "approved_checkpoint": "imgsz960",
+  "approval_text": "Patrick confirmed the five-case interpretation, the imgsz960 checkpoint, and the one-time frozen-test unlock in Codex on 2026-08-19.",
+  "sealed_test_manifest": "results/final_test/sealed_test_manifest.json",
+  "post_test_tuning": false
+}

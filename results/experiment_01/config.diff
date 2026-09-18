@@ -1,0 +1,19 @@
+--- configs/baseline.yaml
++++ configs/exp01_imgsz960.yaml
+@@ -4,7 +4,7 @@
+ pretrained: true
+ data: data/aquarium-combined-v6-yolov11/data.yaml
+ epochs: 50
+-imgsz: 640
++imgsz: 960
+ batch: 8
+ seed: 42
+ deterministic: true
+@@ -12,6 +12,6 @@
+ workers: 2
+ device: 0
+ project: runs
+-name: yolo11n_baseline_seed42
++name: yolo11n_imgsz960_seed42
+ exist_ok: false
+ save: true

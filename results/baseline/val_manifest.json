@@ -1,0 +1,64 @@
+{
+  "run_id": "val_best_imgsz640-2",
+  "created_at_utc": "2026-08-19T07:54:26.453234+00:00",
+  "task": "detect",
+  "model": {
+    "checkpoint": "archive://baseline/best.pt",
+    "checkpoint_sha256": "837d249c93ee487b262190adcd6287cece0af8b51c25654c5c9e4f4a25cd33e3",
+    "architecture": "YOLO11n",
+    "training_seed": 42
+  },
+  "dataset": {
+    "name": "Aquarium Combined v6",
+    "data_yaml": "data/aquarium-combined-v6-yolov11/data.yaml",
+    "split": "val",
+    "images": 127,
+    "instances": 909,
+    "test_accessed": false
+  },
+  "validation_config": {
+    "imgsz": 640,
+    "batch": 8,
+    "device": 0,
+    "conf": 0.001,
+    "iou": 0.7,
+    "rect": true,
+    "plots": true,
+    "workers": 2
+  },
+  "software": {
+    "python": "3.12.13",
+    "ultralytics": "8.4.115",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "gpu": "Tesla T4"
+  },
+  "overall_metrics": {
+    "metrics/precision(B)": 0.7997771724293712,
+    "metrics/recall(B)": 0.6814527677875697,
+    "metrics/mAP50(B)": 0.7669237243187651,
+    "metrics/mAP50-95(B)": 0.4658721153586367,
+    "fitness": 0.4658721153586367
+  },
+  "outputs": {
+    "run_directory": "results/baseline/val_best_imgsz640-2",
+    "metrics_csv": "results/baseline/val_metrics.csv",
+    "diagnostic_files": [
+      "BoxF1_curve.png",
+      "BoxPR_curve.png",
+      "BoxP_curve.png",
+      "BoxR_curve.png",
+      "confusion_matrix.png",
+      "confusion_matrix_normalized.png",
+      "val_batch0_labels.jpg",
+      "val_batch0_pred.jpg",
+      "val_batch1_labels.jpg",
+      "val_batch1_pred.jpg",
+      "val_batch2_labels.jpg",
+      "val_batch2_pred.jpg"
+    ],
+    "metrics_csv_sha256": "f9b80347197481a2bbf2dfde137cbba2ca84e7f08a68d93de09c5dd217d7e180"
+  },
+  "requested_run_name": "val_best_imgsz640",
+  "evidence_repaired_at_utc": "2026-08-19T08:17:23.091926+00:00"
+}

@@ -1,0 +1,48 @@
+{
+  "status": "completed",
+  "created_at_utc": "2026-08-19T08:47:22.102565+00:00",
+  "train_started_utc": "2026-08-19T08:20:47.468434+00:00",
+  "train_duration_minutes": 26.366781330650003,
+  "config": "configs/exp01_imgsz960.yaml",
+  "config_sha256": "f2cf2c867ba659ace631784c125b07a63cf6de3acf0069e032cb7d251b0c6c6a",
+  "runtime_config_sha256": "ee14fd335050b725c179172ea7a40b5ec8bb69e1b87991e3dc7f382f01337b25",
+  "config_diff": "results/experiment_01/config.diff",
+  "changed_keys": [
+    "imgsz",
+    "name"
+  ],
+  "run_directory": "results/experiment_01/train_run",
+  "checkpoint": "release://v1.0/aquarium-yolo11n-imgsz960-best.pt",
+  "checkpoint_sha256": "ff7284669dd3d1b30b83f2d9eaacbdefdf8b50836f6f4e629bfd16f877a2f281",
+  "validation": {
+    "split": "val",
+    "run_directory": "results/experiment_01/val_imgsz960",
+    "metrics_csv": "results/experiment_01/val_metrics.csv",
+    "metrics_csv_sha256": "b18e24f4915601daa519ff746787cdbbb0ba18df2488777bca64abce02cbfa59",
+    "imgsz": 960,
+    "batch": 8,
+    "conf": 0.001,
+    "iou": 0.7,
+    "rect": true,
+    "test_accessed": false
+  },
+  "software": {
+    "python": "3.12.13",
+    "ultralytics": "8.4.115",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "gpu": "Tesla T4"
+  },
+  "preregistration": {
+    "path": "docs/experiment_01_plan.md",
+    "repository_sha256": "2a699930aa9662152ed1afb8aedd34796eea522d02a35528543fcc61e315b57c",
+    "runtime_sha256": "7d9d98a2d8f019ff2e7120b4e0b16f14e261c374810c99a2f57dfdeddc26aa7b",
+    "file_mtime_utc": "2026-08-19T08:18:13+00:00",
+    "created_before_training": true
+  },
+  "dataset_yaml_sha256": "dcb44902aac3e46a31ba85b3fa8cc7e3e4a131f69ed035b7181ab045a3ee89a7",
+  "pretrained_checkpoint": {
+    "source": "Ultralytics yolo11n.pt downloaded by Ultralytics 8.4.115",
+    "sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1"
+  }
+}
